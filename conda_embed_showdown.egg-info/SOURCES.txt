@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+app/__init__.py
+app/benchmark.py
+app/embeddings.py
+app/search.py
+app/streamlit_app.py
+conda_embed_showdown.egg-info/PKG-INFO
+conda_embed_showdown.egg-info/SOURCES.txt
+conda_embed_showdown.egg-info/dependency_links.txt
+conda_embed_showdown.egg-info/entry_points.txt
+conda_embed_showdown.egg-info/not-zip-safe
+conda_embed_showdown.egg-info/requires.txt
+conda_embed_showdown.egg-info/top_level.txt
+tools/__init__.py
+tools/prepare_index.py
+tools/start.py

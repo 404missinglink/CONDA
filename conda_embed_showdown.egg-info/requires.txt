@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+faiss-cpu
+openai
+httpx
+tqdm
+scipy
+altair
+python-dotenv
+
+[dev]
+pytest
+ruff

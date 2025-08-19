@@ -1,0 +1,40 @@
+[project]
+name = "conda-embed-showdown"
+version = "0.1.0"
+description = "Embeddings Showdown: Streamlit demo benchmarking OpenAI vs Custom embeddings with FAISS search"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "streamlit",
+  "pandas",
+  "numpy",
+  "faiss-cpu",
+  "openai",
+  "httpx",
+  "tqdm",
+  "scipy",
+  "altair",
+  "python-dotenv"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "ruff"
+]
+
+[project.scripts]
+build_index = "tools.prepare_index:main"
+start = "tools.start:main"
+
+[tool.ruff]
+line-length = 100
+
+[tool.setuptools]
+zip-safe = false
+
+[tool.setuptools.packages.find]
+include = ["app", "tools"]
+exclude = ["data*", "resources*", "artifacts*"]
+
+

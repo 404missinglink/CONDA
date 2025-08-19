@@ -1,0 +1,3 @@
+[console_scripts]
+build_index = tools.prepare_index:main
+start = tools.start:main
